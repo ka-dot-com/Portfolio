@@ -18,6 +18,7 @@
       color: #FFFFFF; /* White text */
       margin: 0;
       padding: 0;
+      overflow-x: hidden; /* Disable horizontal scrolling */
     }
 
     /* Header */
@@ -26,7 +27,7 @@
       border: 3px solid #FFFFFF;
       box-shadow: 0 0 15px #FFFFFF; /* Glow effect */
       padding: 10px 20px;
-      width: 90%;
+      width: calc(100% - 40px); /* Ensure it fits within the viewport */
       max-width: 600px;
       text-align: center;
       border-radius: 10px; /* Rounded corners */
@@ -36,6 +37,7 @@
     .header h1 {
       margin: 0;
       font-size: 2em; /* Increased font size to fill the header */
+      word-wrap: break-word; /* Ensure long words break properly */
     }
 
     /* Centered container */
@@ -45,7 +47,7 @@
       border: 3px solid #FFFFFF; /* White border */
       border-radius: 10px; /* Rounded corners */
       box-shadow: 0 0 15px #FFFFFF; /* Glow effect */
-      width: 90%;
+      width: calc(100% - 40px); /* Ensure it fits within the viewport */
       max-width: 600px;
       text-align: center;
       margin: 20px auto;
