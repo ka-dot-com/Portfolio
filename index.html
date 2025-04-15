@@ -5,58 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <style>
-    /* Define custom font */
+    
     @font-face {
       font-family: 'Acer710Mono';
       src: url('Web437_Acer710_Mono.woff') format('woff');
     }
 
-    /* General styles */
+    
     body {
       font-family: 'Acer710Mono', monospace;
-      background-color: #0000AA; /* Deep blue background */
-      color: #FFFFFF; /* White text */
+      background-color: #0000AA; 
+      color: #FFFFFF; 
       margin: 0;
       padding: 0;
     }
 
-    /* Fixed header */
+    
     .header {
       background-color: #000080;
       border: 3px solid #FFFFFF;
-      box-shadow: 0 0 15px #FFFFFF; /* Glow effect */
+      box-shadow: 0 0 15px #FFFFFF; 
       padding: 10px 20px;
-      position: fixed;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
       width: 90%;
       max-width: 600px;
-      z-index: 1000;
       text-align: center;
       border-radius: 10px;
+      margin: 20px auto; 
     }
 
     .header h1 {
       margin: 0;
-      font-size: 1.5em;
+      font-size: 2em; 
     }
 
-    /* Centered container */
+    
     .container {
-      background-color: #000080; /* Darker blue for the container */
+      background-color: #000080; 
       padding: 20px;
-      border: 3px solid #FFFFFF; /* White border */
+      border: 3px solid #FFFFFF; 
       border-radius: 10px;
-      box-shadow: 0 0 15px #FFFFFF; /* Glow effect */
+      box-shadow: 0 0 15px #FFFFFF; 
       width: 90%;
       max-width: 600px;
       text-align: center;
-      margin: 100px auto 20px auto; /* Adjusted for header height */
+      margin: 20px auto;
     }
 
     h2 {
-      margin: 40px 0 20px 0; /* Two enters before the section and default margin after */
+      margin: 40px 0 20px 0; 
     }
 
     p {
@@ -64,7 +60,7 @@
     }
 
     a {
-      color: #00FFFF; /* Cyan links */
+      color: #00FFFF; 
       text-decoration: none;
       font-weight: bold;
     }
@@ -79,19 +75,20 @@
       padding: 10px 20px;
       font-size: 16px;
       font-weight: bold;
-      color: #000080;
-      background-color: #00FFFF;
-      border: 2px solid #FFFFFF;
+      color: #000080; 
+      background-color: #FFFFFF; 
+      border: 3px solid #FFFFFF; 
       text-transform: uppercase;
       text-decoration: none;
       border-radius: 5px;
       cursor: pointer;
+      box-shadow: 0 0 10px #FFFFFF; 
       transition: all 0.3s ease;
     }
 
     .button:hover {
-      background-color: #FFFFFF;
-      color: #000080;
+      background-color: #000080; 
+      color: #FFFFFF; 
     }
 
     .project-table {
@@ -101,14 +98,14 @@
     }
 
     .project-row {
-      border: 2px solid #FFFFFF; /* White border around rows */
+      border: 2px solid #FFFFFF; 
       padding: 10px;
       margin-bottom: 10px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       background-color: #000080;
-      box-shadow: 0 0 10px #FFFFFF; /* Glow effect for each row */
+      box-shadow: 0 0 10px #FFFFFF; 
     }
 
     .project-info {
@@ -129,7 +126,7 @@
     }
 
     .github-link {
-      color: #FF0000; /* Red color for "View on GitHub" */
+      color: #FF0000; 
       text-decoration: none;
       font-weight: bold;
       margin-left: 20px;
