@@ -20,16 +20,21 @@
       padding: 0;
     }
 
-    /* Sticky header */
+    /* Fixed header */
     .header {
       background-color: #000080;
-      border-bottom: 3px solid #FFFFFF;
+      border: 3px solid #FFFFFF;
       box-shadow: 0 0 15px #FFFFFF; /* Glow effect */
       padding: 10px 20px;
-      position: sticky;
+      position: fixed;
       top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 600px;
       z-index: 1000;
       text-align: center;
+      border-radius: 10px;
     }
 
     .header h1 {
@@ -47,7 +52,7 @@
       width: 90%;
       max-width: 600px;
       text-align: center;
-      margin: 20px auto;
+      margin: 100px auto 20px auto; /* Adjusted for header height */
     }
 
     h2 {
@@ -70,7 +75,7 @@
 
     .button {
       display: inline-block;
-      margin-top: 20px;
+      margin: 10px;
       padding: 10px 20px;
       font-size: 16px;
       font-weight: bold;
@@ -174,8 +179,11 @@
       </div>
     </div>
     <h2>Contact</h2>
-    <p>Email me: <a href="mailto:kswierczynska21@gmail.com">kswierczynska21@gmail.com</a></p>
-    <a href="mailto:kswierczynska21@gmail.com" class="button">Send Email</a>
+    <div>
+      <a href="mailto:kswierczynska21@gmail.com" class="button">Email</a>
+      <a href="https://www.xing.com/profile/Barbara_Swierczynska/web_profiles" target="_blank" class="button">Xing</a>
+      <a href="www.linkedin.com/in/barbara-swierczynska-113190324" target="_blank" class="button">LinkedIn</a>
+    </div>
   </div>
 </body>
 </html>
