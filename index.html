@@ -5,54 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+   
+    @font-face {
+      font-family: 'Acer710Mono';
+      src: url('Web437_Acer710_Mono.woff') format('woff');
     }
 
+   
     body {
       font-family: 'Acer710Mono', monospace;
-      background-color: #0000AA;
-      color: #FFFFFF;
+      background-color: #0000AA; 
+      color: #FFFFFF; 
       margin: 0;
       padding: 0;
-      overflow-x: hidden;
     }
 
+    
     .header {
       background-color: #000080;
       border: 3px solid #FFFFFF;
-      box-shadow: 0 0 15px #FFFFFF;
+      box-shadow: 0 0 15px #FFFFFF; 
       padding: 10px 20px;
-      width: 100%;
+      width: 90%;
       max-width: 600px;
       text-align: center;
-      border-radius: 10px;
-      margin: 20px auto;
+      border-radius: 10px; 
+      margin: 20px auto; 
     }
 
     .header h1 {
       margin: 0;
-      font-size: 2em;
-      word-wrap: break-word;
+      font-size: 2em; 
     }
 
+   
     .container {
-      background-color: #000080;
+      background-color: #000080; 
       padding: 20px;
-      border: 3px solid #FFFFFF;
-      border-radius: 10px;
-      box-shadow: 0 0 15px #FFFFFF;
-      width: 100%;
+      border: 3px solid #FFFFFF; 
+      border-radius: 10px; 
+      box-shadow: 0 0 15px #FFFFFF; 
+      width: 90%;
       max-width: 600px;
       text-align: center;
       margin: 20px auto;
     }
 
     h2 {
-      margin: 40px 0 20px 0;
-      font-size: 1.5em;
+      margin: 40px 0 20px 0; 
     }
 
     p {
@@ -60,7 +60,7 @@
     }
 
     a {
-      color: #00FFFF;
+      color: #00FFFF; 
       text-decoration: none;
       font-weight: bold;
     }
@@ -75,9 +75,9 @@
       padding: 10px 20px;
       font-size: 16px;
       font-weight: bold;
-      color: #000080;
-      background-color: #FFFFFF;
-      border: 3px solid #FFFFFF;
+      color: #000080; 
+      background-color: #FFFFFF; 
+      border: 3px solid #FFFFFF; 
       text-transform: uppercase;
       text-decoration: none;
       border-radius: 5px;
@@ -88,7 +88,7 @@
 
     .button:hover {
       background-color: #000080;
-      color: #FFFFFF;
+      color: #FFFFFF; 
     }
 
     .project-table {
@@ -98,26 +98,20 @@
     }
 
     .project-row {
-      border: 3px solid #FFFFFF;
+      border: 3px solid #FFFFFF; 
       padding: 10px;
       margin-bottom: 10px;
       display: flex;
-      flex-direction: column;
       justify-content: space-between;
-      align-items: flex-start;
+      align-items: center;
       background-color: #000080;
-      box-shadow: 0 0 10px #FFFFFF;
-      border-radius: 10px;
-    }
-
-    .project-row a.github-link {
-      align-self: flex-end;
-      margin-top: 10px;
+      box-shadow: 0 0 10px #FFFFFF; 
+      border-radius: 10px; 
     }
 
     .project-info {
       text-align: left;
-      width: 100%;
+      flex: 1;
     }
 
     .project-title {
@@ -133,67 +127,14 @@
     }
 
     .github-link {
-      color: #FF0000;
+      color: #FF0000; 
       text-decoration: none;
       font-weight: bold;
+      margin-left: 20px;
     }
 
     .github-link:hover {
       text-decoration: underline;
-    }
-
-    @media (max-width: 768px) {
-      .header h1 {
-        font-size: 1.8em;
-      }
-
-      h2 {
-        font-size: 1.3em;
-      }
-
-      .button {
-        font-size: 14px;
-        padding: 8px 16px;
-      }
-
-      .project-row {
-        padding: 10px;
-      }
-
-      .project-title {
-        font-size: 1em;
-      }
-
-      .project-description {
-        font-size: 0.85em;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .header {
-        padding: 10px;
-      }
-
-      .header h1 {
-        font-size: 1.5em;
-      }
-
-      .button {
-        font-size: 12px;
-        padding: 6px 12px;
-      }
-
-      .project-row {
-        padding: 8px;
-      }
-
-      .project-title {
-        font-size: 0.9em;
-      }
-
-      .project-description {
-        font-size: 0.8em;
-      }
     }
   </style>
 </head>
@@ -203,7 +144,7 @@
   </div>
   <div class="container">
     <h2>Cybersecurity & Python Specialist</h2>
-    <p>An IT specialist with a background in system integration, cybersecurity, and automation. I focus on solving real-world tech challenges by creating Python tools, securing networks, and optimizing infrastructure. With certifications in Cisco, Microsoft, and ethical hacking, I’m all about finding efficient and reliable solutions that just work.</p>
+    <p>An IT specialist with a background in system integration, cybersecurity, and automation. I focus on solving real-world tech challenges by creating Python tools, securing networks, and optimizing infrastructure. With certifications from Cisco and Microsoft such as Ethical Hacking, Cybersecurity Ops, or Network Technician, I’m all about finding efficient and reliable solutions that just work.</p>
     <h2>Projects</h2>
     <div class="project-table">
       <div class="project-row">
@@ -238,9 +179,10 @@
     <h2>Contact</h2>
     <div>
       <a href="mailto:kswierczynska21@gmail.com" class="button">Email</a>
-      <a href="https://www.xing.com" target="_blank" class="button">Xing</a>
-      <a href="https://www.linkedin.com/in/twoja-nazwa-uzytkownika/" target="_blank" class="button">LinkedIn</a>
+      <a href="https://www.xing.com/profile/Barbara_Swierczynska/web_profiles" target="_blank" class="button">Xing</a>
+      <a href="https://www.linkedin.com/in/barbara-swierczynska-113190324/" target="_blank" class="button">LinkedIn</a>
     </div>
   </div>
 </body>
+</html>
 </html>
