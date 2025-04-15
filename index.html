@@ -5,42 +5,96 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <style>
-    /* Definicja czcionki */
+    /* Define custom font */
     @font-face {
       font-family: 'Acer710Mono';
       src: url('Web437_Acer710_Mono.woff') format('woff');
     }
 
-    /* Styl dla całej strony */
+    /* General styles */
     body {
-      font-family: 'Acer710Mono', monospace; /* Użyj nowej czcionki */
-      background-color: #000; /* Czarny kolor tła */
-      color: #00FF00; /* Zielony tekst */
+      font-family: 'Acer710Mono', monospace;
+      background-color: #0000AA; /* Deep blue background */
+      color: #FFFFFF; /* White text */
       margin: 0;
       padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Centered container */
+    .container {
+      background-color: #000080; /* Darker blue for the container */
+      padding: 20px;
+      border: 3px solid #FFFFFF; /* White border */
+      border-radius: 10px;
+      box-shadow: 0 0 15px #FFFFFF; /* Glow effect */
+      width: 90%;
+      max-width: 600px;
+      text-align: center;
     }
 
     h1, h2 {
-      text-transform: uppercase;
+      margin: 0 0 20px 0;
     }
 
     a {
-      color: #00FF00; /* Zielone linki */
+      color: #00FFFF; /* Cyan links */
       text-decoration: none;
+      font-weight: bold;
     }
 
     a:hover {
-      color: #FF0000; /* Czerwony efekt hover */
+      text-decoration: underline;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #000080;
+      background-color: #00FFFF;
+      border: 2px solid #FFFFFF;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #FFFFFF;
+      color: #000080;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Moje Portfolio</h1>
-  </header>
-  <main>
-    <p>Test czcionki Web437_Acer710_Mono</p>
-    <p><a href="#">Przykładowy link</a></p>
-  </main>
+  <div class="container">
+    <h1>Barbara Świerczyńska</h1>
+    <h2>Cybersecurity & Python Specialist</h2>
+    <p>Welcome to my retro BIOS-style portfolio! I specialize in cybersecurity tools and Python-based solutions. I am passionate about vulnerability analysis and automating IT processes.</p>
+    <h2>Projects</h2>
+    <ul style="list-style: none; padding: 0;">
+      <li>
+        <strong>Windows Server Log Monitor</strong><br>
+        <a href="https://github.com/ka-dot-com/Windows-Server-Log-Monitor">View on GitHub →</a>
+      </li>
+      <li>
+        <strong>Network Traffic Analyzer</strong><br>
+        <a href="https://github.com/ka-dot-com/Network-Traffic-Analyzer">View on GitHub →</a>
+      </li>
+      <li>
+        <strong>Web App Penetration Tester</strong><br>
+        <a href="https://github.com/ka-dot-com/Web-App-Penetration-Tester">View on GitHub →</a>
+      </li>
+    </ul>
+    <h2>Contact</h2>
+    <p>Email me at: <a href="mailto:kswierczynska21@gmail.com">kswierczynska21@gmail.com</a></p>
+    <a href="mailto:kswierczynska21@gmail.com" class="button">Send Email</a>
+  </div>
 </body>
 </html>
