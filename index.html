@@ -53,6 +53,7 @@
 
     h2 {
       margin: 40px 0 20px 0; /* Two enters before the section and default margin after */
+      font-size: 1.5em; /* Larger headings for readability */
     }
 
     p {
@@ -102,16 +103,22 @@
       padding: 10px;
       margin-bottom: 10px;
       display: flex;
+      flex-direction: column; /* Stack content vertically on narrow screens */
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start; /* Align items to the left */
       background-color: #000080;
       box-shadow: 0 0 10px #FFFFFF; /* Glow effect for each row */
       border-radius: 10px; /* Rounded corners for projects */
     }
 
+    .project-row a.github-link {
+      align-self: flex-end; /* Align GitHub link to the right */
+      margin-top: 10px; /* Add spacing above GitHub link */
+    }
+
     .project-info {
       text-align: left;
-      flex: 1;
+      width: 100%; /* Ensure it takes full width on small screens */
     }
 
     .project-title {
@@ -130,11 +137,65 @@
       color: #FF0000; /* Red color for "View on GitHub" */
       text-decoration: none;
       font-weight: bold;
-      margin-left: 20px;
     }
 
     .github-link:hover {
       text-decoration: underline;
+    }
+
+    /* Media Queries for Mobile Responsiveness */
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 1.8em; /* Slightly smaller font size for mobile */
+      }
+
+      h2 {
+        font-size: 1.3em; /* Adjust heading size for smaller screens */
+      }
+
+      .button {
+        font-size: 14px; /* Slightly smaller buttons */
+        padding: 8px 16px; /* Adjust padding for buttons */
+      }
+
+      .project-row {
+        padding: 10px; /* Reduce padding for smaller screens */
+      }
+
+      .project-title {
+        font-size: 1em; /* Adjust project title size */
+      }
+
+      .project-description {
+        font-size: 0.85em; /* Adjust project description size */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header {
+        padding: 10px; /* Reduce padding for very small screens */
+      }
+
+      .header h1 {
+        font-size: 1.5em; /* Smaller font size for very small screens */
+      }
+
+      .button {
+        font-size: 12px; /* Even smaller buttons */
+        padding: 6px 12px; /* Further reduce padding */
+      }
+
+      .project-row {
+        padding: 8px; /* Even less padding for very small screens */
+      }
+
+      .project-title {
+        font-size: 0.9em; /* Further adjust project title size */
+      }
+
+      .project-description {
+        font-size: 0.8em; /* Further adjust project description size */
+      }
     }
   </style>
 </head>
@@ -144,7 +205,7 @@
   </div>
   <div class="container">
     <h2>Cybersecurity & Python Specialist</h2>
-    <p>An IT specialist with a background in system integration, cybersecurity, and automation. I focus on solving real-world tech challenges by creating Python tools, securing networks, and optimizing infrastructure. With certifications from Cisco and Microsoft such as Ethical Hacking, Cybersecurity Ops, or Network Technician, I’m all about finding efficient and reliable solutions that just work.</p>
+    <p>An IT specialist with a background in system integration, cybersecurity, and automation. I focus on solving real-world tech challenges by creating Python tools, securing networks, and optimizing infrastructure. With certifications in Cisco, Microsoft, and ethical hacking, I’m all about finding efficient and reliable solutions that just work.</p>
     <h2>Projects</h2>
     <div class="project-table">
       <div class="project-row">
@@ -179,10 +240,9 @@
     <h2>Contact</h2>
     <div>
       <a href="mailto:kswierczynska21@gmail.com" class="button">Email</a>
-      <a href="https://www.xing.com/profile/Barbara_Swierczynska/web_profiles" target="_blank" class="button">Xing</a>
-      <a href="https://www.linkedin.com/in/barbara-swierczynska-113190324/" target="_blank" class="button">LinkedIn</a>
+      <a href="https://www.xing.com" target="_blank" class="button">Xing</a>
+      <a href="https://www.linkedin.com/in/twoja-nazwa-uzytkownika/" target="_blank" class="button">LinkedIn</a>
     </div>
   </div>
 </body>
-</html>
 </html>
