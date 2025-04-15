@@ -3,71 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Barbara Swierczynska - IT Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Portfolio</title>
   <style>
+    /* Dodanie czcionki */
+    @font-face {
+      font-family: 'CordataPPC400';
+      src: url('WebPlus_Cordata_PPC-400.woff') format('woff');
+    }
+
+    /* Stylizacja strony */
     body {
-      font-family: 'Inter', sans-serif;
+      background-color: #000; /* Czarny kolor tła */
+      color: #00FF00; /* Zielony tekst */
+      font-family: 'CordataPPC400', monospace; /* Użycie czcionki WebPlus Cordata */
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: #00FF00; /* Zielone linki */
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #FF0000; /* Czerwony efekt hover dla linków */
+    }
+
+    h1, h2 {
+      text-transform: uppercase;
+      margin: 0;
+      padding: 10px 0;
+    }
+
+    header, footer {
+      text-align: center;
+      padding: 20px 0;
+      border-top: 2px solid #00FF00;
+      border-bottom: 2px solid #00FF00;
+    }
+
+    section {
+      margin: 20px auto;
+      max-width: 800px;
+      border: 2px solid #00FF00;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #000;
+      text-align: left;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border: 2px solid #00FF00;
+      color: #00FF00;
+      background: transparent;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      transition: all 0.3s ease;
+      font-family: 'CordataPPC400', monospace;
+    }
+
+    .button:hover {
+      background-color: #00FF00;
+      color: #000;
     }
   </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
- 
-  <header class="bg-gray-900 text-white py-8 shadow-md">
-    <div class="container mx-auto text-center">
-      <h1 class="text-4xl font-bold tracking-wide">Barbara Swierczynska</h1>
-      <p class="mt-2 text-lg">Python, Cybersecurity, AI Specialist | Pforzheim, Germany</p>
-    </div>
+<body>
+  <!-- Nagłówek -->
+  <header>
+    <h1>Barbara Swierczynska</h1>
+    <p>Cybersecurity & Python Specialist</p>
   </header>
 
-  
-  <main class="container mx-auto px-4 py-10">
-    
-    <section class="mb-12 text-center">
-      <h2 class="text-2xl font-semibold mb-4">About Me</h2>
-      <p class="text-lg leading-relaxed max-w-2xl mx-auto">
-        I'm an IT specialist finishing my Fachinformatikerin Systemintegration training in Germany. I hold certifications in Microsoft Project Management, Cisco Cybersecurity Ops, Cisco Network Technician, and Ethical Hacking. I build tools with Python, secure systems, and work with AI to solve real-world problems.
-      </p>
-    </section>
+  <!-- Sekcja: O mnie -->
+  <section>
+    <h2>O mnie</h2>
+    <p>
+      Witaj na moim portfolio w stylu retro BIOS! Specjalizuję się w narzędziach do cyberbezpieczeństwa i rozwiązaniach opartych na Pythonie. Pasjonuję się analizą podatności systemów i automatyzacją procesów IT.
+    </p>
+  </section>
 
-   
-    <section>
-      <h2 class="text-2xl font-semibold text-center mb-8">Projects</h2>
-      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        
-        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-          <h3 class="text-xl font-bold mb-2">Windows Server Log Monitor</h3>
-          <p class="text-gray-700 mb-4">Scans Windows Server logs for suspicious activity, like failed logins, using Python and ML.</p>
-          <a href="https://github.com/ka-dot-com/Windows-Server-Log-Monitor" class="text-blue-600 hover:underline">View on GitHub →</a>
-        </div>
-      
-        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-          <h3 class="text-xl font-bold mb-2">Network Traffic Analyzer</h3>
-          <p class="text-gray-700 mb-4">Web app to monitor network traffic and predict threats like DDoS with AI.</p>
-          <a href="https://github.com/ka-dot-com/Network-Traffic-Analyzer" class="text-blue-600 hover:underline">View on GitHub →</a>
-        </div>
-        
-        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-          <h3 class="text-xl font-bold mb-2">Windows Server Hardening Tool</h3>
-          <p class="text-gray-700 mb-4">Automates Windows Server security by applying CIS benchmarks.</p>
-          <a href="https://github.com/ka-dot-com/Windows-Server-Hardening-Tool" class="text-blue-600 hover:underline">View on GitHub →</a>
-        </div>
-        
-        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-          <h3 class="text-xl font-bold mb-2">Web App Penetration Tester</h3>
-          <p class="text-gray-700 mb-4">Simulates attacks like SQL injection to teach web app security.</p>
-          <a href="https://github.com/ka-dot-com/Web-App-Penetration-Tester" class="text-blue-600 hover:underline">View on GitHub →</a>
-        </div>
-      </div>
-    </section>
-  </main>
+  <!-- Sekcja: Projekty -->
+  <section>
+    <h2>Projekty</h2>
+    <ul>
+      <li>
+        <strong>Windows Server Log Monitor</strong>
+        <p>Narzędzie w Pythonie do monitorowania logów serwera pod kątem podejrzanej aktywności. <a href="https://github.com/ka-dot-com/Windows-Server-Log-Monitor">Zobacz na GitHub →</a></p>
+      </li>
+      <li>
+        <strong>Network Traffic Analyzer</strong>
+        <p>Aplikacja webowa wykrywająca zagrożenia w ruchu sieciowym za pomocą AI. <a href="https://github.com/ka-dot-com/Network-Traffic-Analyzer">Zobacz na GitHub →</a></p>
+      </li>
+      <li>
+        <strong>Web App Penetration Tester</strong>
+        <p>Symulacja ataków, takich jak SQL injection, w celu nauki bezpieczeństwa aplikacji webowych. <a href="https://github.com/ka-dot-com/Web-App-Penetration-Tester">Zobacz na GitHub →</a></p>
+      </li>
+    </ul>
+  </section>
 
- 
-  <footer class="bg-gray-900 text-white py-6">
-    <div class="container mx-auto text-center">
-      <p>Contact: <a href="mailto:kswierczynska21@gmail.com" class="text-blue-400 hover:underline">kswierczynska21@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/ka-dot-com" class="text-blue-400 hover:underline">ka-dot-com</a></p>
-    </div>
+  <!-- Sekcja: Kontakt -->
+  <section>
+    <h2>Kontakt</h2>
+    <p>Skontaktuj się ze mną:</p>
+    <p>Email: <a href="mailto:kswierczynska21@gmail.com">kswierczynska21@gmail.com</a></p>
+    <div class="button">Wyślij email</div>
+  </section>
+
+  <!-- Stopka -->
+  <footer>
+    <p>&copy; 2025 Barbara Swierczynska</p>
   </footer>
 </body>
 </html>
