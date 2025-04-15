@@ -18,10 +18,23 @@
       color: #FFFFFF; /* White text */
       margin: 0;
       padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+    }
+
+    /* Sticky header */
+    .header {
+      background-color: #000080;
+      border-bottom: 3px solid #FFFFFF;
+      box-shadow: 0 0 15px #FFFFFF; /* Glow effect */
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      text-align: center;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 1.5em;
     }
 
     /* Centered container */
@@ -34,10 +47,7 @@
       width: 90%;
       max-width: 600px;
       text-align: center;
-    }
-
-    h1 {
-      margin: 0 0 40px 0; /* Two enters between title and next section */
+      margin: 20px auto;
     }
 
     h2 {
@@ -126,8 +136,10 @@
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="header">
     <h1>Barbara Swierczynska</h1>
+  </div>
+  <div class="container">
     <h2>Cybersecurity & Python Specialist</h2>
     <p>An IT specialist with a background in system integration, cybersecurity, and automation. I focus on solving real-world tech challenges by creating Python tools, securing networks, and optimizing infrastructure. With certifications in Cisco, Microsoft, and ethical hacking, I’m all about finding efficient and reliable solutions that just work.</p>
     <h2>Projects</h2>
